@@ -1,0 +1,23 @@
+# 1. Environment and dependencies
+# The Python virtual environment (like the one you called .venv)
+.venv/
+venv/
+env/
+*.pyc
+__pycache__/
+
+# 2. Local logs and database files (if any)
+*.log
+*.sqlite
+
+# 3. Editor files (VS Code, typically)
+.vscode/
+
+# 4. Project-specific build files
+dist/
+build/
+*.egg-info/
+
+# 5. Docker build artifacts (though usually kept in .dockerignore)
+# Don't track built images or volumes
+.docker/
