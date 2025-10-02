@@ -4,10 +4,10 @@ name: Flask-Hello-World CI/CD
 on:
   push:
     paths:
-      - 'Flask-Hello-World/**'
+      - "Flask-Hello-World/**"
   pull_request:
     paths:
-      - 'Flask-Hello-World/**'
+      - "Flask-Hello-World/**"
 
 jobs:
   build-test-and-push:
@@ -33,7 +33,8 @@ jobs:
       # 4️⃣ Run tests
       - name: Run tests
         run: |
-          pytest Flask-Hello-World/tests || exit 1
+          cd Flask-Hello-World
+          pytest tests || exit 1
 
       # 5️⃣ Set up Docker Buildx
       - name: Set up Docker Buildx
